@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Copy2Paste</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../static/index.css">
+        <style>
+      body{
+        background-image: url("../static/background.jpg");
+          }
+  
+      </style>
+</head>
+<body>
+<nav class="navbar navbar-light navbar-expand-lg nav_col" style="background-color: #f9ccc2 ;"> 
+       <div class="container-fluid">
+          <div class="navbar-header ">
+            <a class="navbar-brand" href="/"><strong class="black_text">Copy2Paste</strong></a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="/"><span class="glyphicon glyphicon-home black_text"></span> <strong class="black_text">Home</strong></a></li>
+              <li><a href="{{ url_for('add') }}"><span class="glyphicon glyphicon-ok black_text"></span> <strong class="black_text">Add</strong></a></li>
+          </ul>
+        </div>
+</nav>
+<form class="form-horizontal" action="{{ url_for('add') }}" method=POST>
+
+<br>
+<br>
+<div class="container1">
+<div>
+    <label for="usr" class="add_title">Title:</label>
+    <input type="text" class="form-control" id="paste_title" name="paste_title">
+</div>
+
+<div>
+    <label for="comment" class="add_title">Content:</label>
+    <textarea class="form-control" rows="5" id="paste_content" name="paste_content"></textarea>
+</div> 
+<br>
+<div class="col-sm-10 col-form-label button_center" id="details_button">
+    <button type="submit" class="btn btn-primary btn-block black_text" id="add_button"><strong>Add Paste</strong></button>
+</div>
+
+</div>
+</form>
+</body>
+</html>

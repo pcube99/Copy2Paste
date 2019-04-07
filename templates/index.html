@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Copy2Paste</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../static/index.css">
+        <style>
+      body{
+        background-image: url("../static/background.jpg");
+          }
+  
+      </style>
+</head>
+<body>
+<nav class="navbar navbar-light navbar-expand-lg" style="background-color: #f9ccc2 ;"> 
+       <div class="container-fluid">
+          <div class="navbar-header ">
+            <a class="navbar-brand" href="/"><strong class="black_text">Copy2Paste</strong></a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="/"><span class="glyphicon glyphicon-home black_text"></span> <strong class="black_text">Home</strong></a></li>
+              <li><a href="{{ url_for('add') }}"><span class="glyphicon glyphicon-ok black_text"></span> <strong class="black_text">Add</strong></a></li>
+
+            </ul>
+        </div>
+</nav>
+<div id="details_title">
+        Current Pastes.
+</div>
+<div id="details">
+<br>
+{% block main %}
+<table class="table" id="table_mod">
+        <tbody>
+            {% for i in rows %}          
+            <tr id="details_table">
+            <td class="td_title col-sm-2">  {{i['title']}}</td>
+            <td class="td_content col-sm-4">   {{i['content']}}</td>
+            <td>   <form method="POST" action="{{ url_for('delete',id=i['title'])}}">
+                <input class="btn btn-warning btn-small col-sm-4 delete_button" type="submit" value="Delete">
+              </form>
+            </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+</table>
+</div>
+{% endblock %}
+</body>
+</html>

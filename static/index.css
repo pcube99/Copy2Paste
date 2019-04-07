@@ -1,0 +1,83 @@
+body{
+    background-image: url("../static/background.jpg")
+}
+
+.deepshadow {
+  color: #e0dfdc;
+  background-color: #333;
+  letter-spacing: 0.1em;
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+}
+
+#paste_title{
+    width: 70%;
+    margin-left: 30px;
+
+}
+
+#paste_content{
+    width: 70%;
+    margin-left: 30px;
+
+}
+
+.add_title{
+    padding-top: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    padding-left: 30px;
+}
+.black_text{
+    color: black;
+}
+.container1{
+    width: 30%;
+    align-content: center;
+    align-items: center;
+    border: 2px black;
+    border-radius: 25px;
+    height: 350px;
+    margin: auto;
+    background-color: orange; /* For browsers that do not support gradients */
+    background-image: repeating-linear-gradient(orange);
+ }
+ 
+ #add_button{
+    margin-left: 15px;
+ }
+
+ #details_title{
+    font-weight: bold;
+    font-size: 40px;
+    align-content: center;
+    align-items: center;
+    color: white;
+    margin: auto;
+    padding-left: 40%
+}
+
+.td_title{
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.td_content{
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#details_table{
+    margin-left: 20%;
+}
+.delete_button{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+#table_mod{
+    border: white;
+}
