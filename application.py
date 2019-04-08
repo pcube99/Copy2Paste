@@ -1,3 +1,6 @@
+##Author : Pankil Panchal
+## github : pcube99
+
 #!/usr/bin/env python3
 from flask import Flask, render_template, url_for, request, session, redirect,Markup, flash
 from flask_pymongo import PyMongo
@@ -10,7 +13,7 @@ import time
 app = Flask(__name__)
 app.config["MONGO_DBNAME"] = "copy2paste"
 app.config["MONGO_URI"] = "mongodb://ppp:PANKIL@cluster0-shard-00-00-tqm1v.mongodb.net:27017,cluster0-shard-00-01-tqm1v.mongodb.net:27017,cluster0-shard-00-02-tqm1v.mongodb.net:27017/copy2paste?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin"
-
+##
 mongo = PyMongo(app)
 
 @app.route('/', methods=['POST', 'GET'])
