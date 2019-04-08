@@ -39,7 +39,12 @@
             {% for i in rows %}          
             <tr id="details_table">
             <td class="td_title col-sm-2">  {{i['title']}}</td>
+            {% if "http" in i['content']%}
+            <td class="td_content col-sm-4">  <a href="{{i['content']}}">{{i['content']}}</a> </td>
+            {% else %}
             <td class="td_content col-sm-4">   {{i['content']}}</td>
+
+            {% endif %}
             <td>   <form method="POST" action="{{ url_for('delete',id=i['title'])}}">
                 <input class="btn btn-warning btn-small col-sm-4 col-bg-2 delete_button" type="submit" value="Delete">
               </form>

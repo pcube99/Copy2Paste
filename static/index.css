@@ -1,7 +1,24 @@
 body{
     background-image: url("../static/background.jpg")
 }
-
+a:link {
+    color: white;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: white;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: white;
+  }
+  
+  /* selected link */
+  a:active {
+    color: white;
+  }
 .deepshadow {
   color: #e0dfdc;
   background-color: #333;
