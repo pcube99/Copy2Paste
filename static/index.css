@@ -37,7 +37,7 @@ body{
     align-items: center;
     border: 2px black;
     border-radius: 25px;
-    height: 350px;
+    height: 380px;
     margin: auto;
     background-color: orange; /* For browsers that do not support gradients */
     background-image: repeating-linear-gradient(orange);
@@ -69,9 +69,7 @@ body{
     font-weight: bold;
 }
 
-#details_table{
-    margin-left: 20%;
-}
+
 .delete_button{
     font-size: 20px;
     font-weight: bold;
@@ -80,4 +78,104 @@ body{
 
 #table_mod{
     border: white;
+}
+
+#uploaded_file{
+    margin-left: 8%;
+}
+
+@media only screen and (max-width: 768px) {
+.container1{
+    width: 50%;
+    align-content: center;
+    align-items: center;
+    border: 2px black;
+    border-radius: 25px;
+    height: 380px;
+    margin: auto;
+    background-color: orange; /* For browsers that do not support gradients */
+    background-image: repeating-linear-gradient(orange);
+    }
+
+    #add_button{
+        margin-left: 0%;
+     }
+     
+     .add_title{
+        padding-top: 10px;
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+        padding-left: 30px;
+    }
+
+    #details_title{
+        font-weight: bold;
+        font-size: 30px;
+        align-content: center;
+        align-items: center;
+        color: white;
+        margin-left: -9%
+    }
+
+    .td_title{
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .td_content{
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .delete_button{
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        height: 40px;
+        
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    #details_title{
+        font-weight: bold;
+        font-size: 25px;
+        align-content: center;
+        align-items: center;
+        color: white;
+        padding-left: -2%;
+    }
+
+}
+
+@media only screen and (max-width: 440px) {
+    #details_title{
+        font-weight: bold;
+        font-size: 20px;
+        align-content: center;
+        align-items: center;
+        color: white;
+        padding-left: -1%;
+    }
+    .td_title{
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .td_content{
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .delete_button{
+        font-size: 15px;
+        font-weight: bold;
+        color: black;
+        height: 30px;
+
+        
+    }
 }

@@ -29,7 +29,7 @@
         </div>
 </nav>
 <div id="details_title">
-        Current Pastes.
+        Saved Details
 </div>
 <div id="details">
 <br>
@@ -41,7 +41,7 @@
             <td class="td_title col-sm-2">  {{i['title']}}</td>
             <td class="td_content col-sm-4">   {{i['content']}}</td>
             <td>   <form method="POST" action="{{ url_for('delete',id=i['title'])}}">
-                <input class="btn btn-warning btn-small col-sm-4 delete_button" type="submit" value="Delete">
+                <input class="btn btn-warning btn-small col-sm-4 col-bg-2 delete_button" type="submit" value="Delete">
               </form>
             </td>
             </tr>
