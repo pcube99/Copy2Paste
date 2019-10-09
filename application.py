@@ -12,7 +12,7 @@ import time
 #from passlib.hash import sha256_crypt
 app = Flask(__name__)
 app.config["MONGO_DBNAME"] = "copy2paste"
-app.config["MONGO_URI"] = "mongodb://ppp:PANKIL@cluster0-shard-00-00-tqm1v.mongodb.net:27017,cluster0-shard-00-01-tqm1v.mongodb.net:27017,cluster0-shard-00-02-tqm1v.mongodb.net:27017/copy2paste?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin"
+app.config["MONGO_URI"] = "mongodb://<username>:<password>@cluster0-shard-00-00-tqm1v.mongodb.net:27017,cluster0-shard-00-01-tqm1v.mongodb.net:27017,cluster0-shard-00-02-tqm1v.mongodb.net:27017/copy2paste?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin"
 ##
 mongo = PyMongo(app)
 
